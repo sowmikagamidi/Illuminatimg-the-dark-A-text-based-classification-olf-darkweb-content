@@ -12,97 +12,98 @@ To address these limitations, this study proposes a hybrid LDA-Deep Learning arc
 
 To develop a robust classification model capable of identifying Dark Web services associated with malicious activities using enriched topic-based features and deep learning.
 
-🧠 Proposed Methodology
+🧠 Proposed Methodology:
+
 1️⃣ Dataset
 
-Source: Kaggle Dark Web services dataset
+--> Source: Kaggle Dark Web services dataset
 
-Includes textual descriptions of various Dark Web service listings
+--> Includes textual descriptions of various Dark Web service listings
 
-Used for classification into benign vs. malicious categories
+--> Used for classification into benign vs. malicious categories
 
 2️⃣ Preprocessing
 
-Tokenization and text cleaning
+--> Tokenization and text cleaning
 
-Stopword removal
+--> Stopword removal
 
-Lemmatization
+--> Lemmatization
 
-Standardization of text structure
+--> Standardization of text structure
 
 3️⃣ Feature Engineering using LDA
 
-Applied Latent Dirichlet Allocation (LDA)
+--> Applied Latent Dirichlet Allocation (LDA)
 
-Extracted 90 topic weights, serving as enhanced semantic features
+--> Extracted 90 topic weights, serving as enhanced semantic features
 
-Provided deeper thematic understanding of Dark Web content
+--> Provided deeper thematic understanding of Dark Web content
 
-4️⃣ Deep Learning Models
+4️⃣ Deep Learning Models:
+
 ⭐ LDA-TextCNN Model
 
-Topic weights + text embeddings
+--> Topic weights + text embeddings
 
-Text Convolutional Neural Network
+--> Text Convolutional Neural Network
 
-Captures local and global semantic patterns
+--> Captures local and global semantic patterns
 
-Achieved 95% prediction accuracy
+--> Achieved 95% prediction accuracy
 
 ⭐ Extended LDA-Hybrid TextCNN Model
 
 Integration of:
 
-TextCNN
+--> TextCNN
 
-2D Convolutional Neural Network (CNN2D)
+--> 2D Convolutional Neural Network (CNN2D)
 
-Dropout layers to reduce overfitting
+--> Dropout layers to reduce overfitting
 
-Achieved 96% accuracy
+--> Achieved 96% accuracy
 
-Best overall performance
+--> Best overall performance
 
 🆚 Algorithms Compared
-Model	Accuracy
-K-Nearest Neighbors (KNN)	Moderate
-Random Forest	Lower than DL models
-LDA-TextCNN	95%
-LDA-Hybrid TextCNN	96%
-💡 Key Contributions
+--> Model	Accuracy
+--> K-Nearest Neighbors (KNN)	Moderate
+--> Random Forest	Lower than DL models
+--> LDA-TextCNN	95%
+--> LDA-Hybrid TextCNN	96%
+
+💡 Key Contributions:
 
 ✔️ Combines topic modelling with deep learning for better classification
 ✔️ Handles irrelevant/noisy data more effectively than TF-IDF/LSA
 ✔️ Scalable and adaptable for real-world cybersecurity use cases
 ✔️ Outperforms traditional ML algorithms significantly
 
-📈 Results
+📈 Results:
 
-Deep learning + topic modelling significantly improved malicious service detection
+--> Deep learning + topic modelling significantly improved malicious service detection
 
-Hybrid model provides highest accuracy and reduced overfitting
+--> Hybrid model provides highest accuracy and reduced overfitting
 
-Demonstrates strong potential for real-time Dark Web threat analysis
+--> Demonstrates strong potential for real-time Dark Web threat analysis
 
-🔮 Future Enhancements
+🔮 Future Enhancements:
 
-Real-time classification for Dark Web monitoring systems
+--> Real-time classification for Dark Web monitoring systems
 
-Integration of dynamic topic modelling for rapidly evolving threats
+--> Integration of dynamic topic modelling for rapidly evolving threats
 
-Use of transformer architectures (BERT, RoBERTa, etc.) for improved contextual learning
+--> Use of transformer architectures (BERT, RoBERTa, etc.) for improved contextual learning
 
-🛠️ Tech Stack
+🛠️ Tech Stack:
 
-Python
+--> Python
 
-Scikit-learn
+--> Scikit-learn
 
-Gensim (LDA)
+--> TensorFlow / Keras (TextCNN, CNN2D)
 
-TensorFlow / Keras (TextCNN, CNN2D)
+--> Pandas, NumPy
 
-Pandas, NumPy
-
-Matplotlib / Seaborn
+--> Matplotlib / Seaborn
